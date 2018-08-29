@@ -1,0 +1,23 @@
+{
+    "name": "yiqiling/easy-creative",
+    "description": "use php curl to grab creative from an app on iTunes",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dyson",
+            "email": "991347487@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.5"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "EasyCreative\\": "src/EasyCreative/"
+        }
+    }
+
+}
