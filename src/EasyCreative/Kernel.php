@@ -10,9 +10,9 @@ class Kernel {
      */
     public static function StartCrawling($package_name = '297606951')
     {
-        $url = 'https://itunes.apple.com/us/lookup?id='.$package_name;
-        //$html_doc = self::makeCurl($url);
-        $html_doc = json_decode(file_get_contents($url), true);
+        $url = 'https://itunes.apple.com/us/lookup?id='.$package_name; //iTunes提供的接口
+        $html_doc = self::makeCurl($url); //建议使用Curl来请求接口
+        //$html_doc = json_decode(file_get_contents($url), true);
 
         $html_json_data = json_decode($html_doc, true);
 
